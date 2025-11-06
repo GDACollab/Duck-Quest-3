@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b6xdimjt1h6af"
-path="res://.godot/imported/spritesheet-tiles-default.png-ada99a01c67c910f2ef68fd6e663fead.ctex"
+uid="uid://bubr0lc8asxgr"
+path="res://.godot/imported/duck.png-21cab1e54e4b83711f5fa91164c83dfd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Tile Atlas/spritesheet-tiles-default.png"
-dest_files=["res://.godot/imported/spritesheet-tiles-default.png-ada99a01c67c910f2ef68fd6e663fead.ctex"]
+source_file="res://Assets/Player/Sprites/duck.png"
+dest_files=["res://.godot/imported/duck.png-21cab1e54e4b83711f5fa91164c83dfd.ctex"]
 
 [params]
 
