@@ -11,5 +11,6 @@ config_version=5
 [application]
 
 config/name="Duck Quest 3"
+run/main_scene="uid://td0u4ytiyu1i"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
