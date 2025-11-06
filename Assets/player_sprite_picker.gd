@@ -11,4 +11,3 @@ func _ready() -> void:
 	textures_array.append(myTexture2)
 	
 	texture = textures_array.pick_random()
-	texture.
