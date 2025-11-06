@@ -1,13 +1,19 @@
 extends Sprite2D
 
-@onready var character_body = $"../CharacterBody2D"
-var myTexture1 = load("res://Assets/Sprites/Player Sprites/duck.png")
-var myTexture2 = load("res://Assets/Sprites/Player Sprites/duck2.png")
+var player_sprites_dir = DirAccess.open("res://Assets/Player/Sprites/")
 
-var textures_array = []
+const file_extension : String = "res://Assets/Player/Sprites/"
+
+var files_array : Array = []
+var textures_array : Array = []
 
 func _ready() -> void:
-	textures_array.append(myTexture1)
-	textures_array.append(myTexture2)
+	files_array = player_sprites_dir.get_files()
 	
-	texture = textures_array.pick_random()
+	for t in files_array:
+		if (!t.contains("import")):
+			textures_array.append(t)
+			
+	# print(textures_array)
+	texture = load(file_extension + textures_array.pick_random())
+		
