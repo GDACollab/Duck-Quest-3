@@ -7,6 +7,11 @@ var files_array: PackedStringArray
 var scripts_array: Array[String] = []
 var custom_script: EnemyScript
 
+## WARNING: DO NOT MODIFY THIS FILE
+## WARNING: DO NOT MODIFY THIS FILE
+## WARNING: DO NOT MODIFY THIS FILE
+## WARNING: DO NOT MODIFY THIS FILE
+## WARNING: DO NOT MODIFY THIS FILE
 
 func _ready() -> void:
 	## Random Script Selection
@@ -19,5 +24,5 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	## TODO add player position to this call (use singleton or known relative location of player in scenetree to have a player reference)
-	linear_velocity = custom_script.move(global_position, Vector2.ZERO, delta)
+	linear_velocity = custom_script.move(global_position, %Player.global_position, delta)
 	
