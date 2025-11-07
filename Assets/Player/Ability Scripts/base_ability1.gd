@@ -13,14 +13,14 @@ func _init() -> void:
 # player.move_speed 
 # player.acceleration
 # player.toggle_gravity
-## you may do whatever, as long as it all happens within these functions.
-## feel free to declare variables as well.
+## you may do whatever, as long as it all happens within this script.
+## feel free to declare variables and other functions as well.
 ## only modify your ability script and nothing else
 
 
 ## called whenever the player just pressed Q. It is called once.
 func ability_just_pressed():
-	## Example: Decrease Speed Button
+	## Example: Increase Speed Button
 	# multiplies move_speed and accel by 2
 	player.move_speed *= 2
 	player.acceleration *= 2
