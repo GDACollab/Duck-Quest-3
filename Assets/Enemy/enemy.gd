@@ -23,6 +23,9 @@ func _ready() -> void:
 	custom_script = load(file_extension + scripts_array.pick_random()).new()
 
 func _process(delta: float) -> void:
-	## TODO add player position to this call (use singleton or known relative location of player in scenetree to have a player reference)
-	linear_velocity = custom_script.move(global_position, %Player.global_position, delta)
+	if !%Player: 
+		printerr("[WARNING] Enemy requires that a node 'Player' exists within the same scene that has 'Access as Unique Name' enabled")
+		get_tree().quit()
+	else:
+		linear_velocity = custom_script.move(global_position, %Player.global_position, delta)
 	
