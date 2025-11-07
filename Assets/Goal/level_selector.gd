@@ -7,7 +7,7 @@ const file_extension : String = "res://Assets/Levels/"
 var files_array : Array = []
 
 @onready var AUDIO : AudioStreamPlayer2D = $"Win SFX"
-var dir := DirAccess.open("")
+var dir := DirAccess.open("res://Assets/Audio/Win SFX/")
 
 
 func _ready() -> void:
