@@ -22,7 +22,9 @@ animations = [{
 
 [node name="Goal" type="AnimatedSprite2D"]
 sprite_frames = SubResource("SpriteFrames_cb1e0")
-frame_progress = 0.23150906
+autoplay = "default"
+frame = 1
+frame_progress = 0.7579475
 
 [node name="Area2D" type="Area2D" parent="."]
 script = ExtResource("3_06wq3")
