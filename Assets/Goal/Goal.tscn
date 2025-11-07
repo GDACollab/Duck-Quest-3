@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://cmak24w6qj1jr"]
+
+[ext_resource type="Texture2D" uid="uid://drh8dqldfoaey" path="res://Assets/Goal/Sprites/flag_red_a.png" id="1_0bmx3"]
+[ext_resource type="Texture2D" uid="uid://bh35tbgucfhpj" path="res://Assets/Goal/Sprites/flag_red_b.png" id="2_06wq3"]
+[ext_resource type="Script" uid="uid://dgdunftro6i1v" path="res://Assets/Goal/level_selector.gd" id="3_06wq3"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cb1e0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_0bmx3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_06wq3")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0bmx3"]
+
+[node name="Goal" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_cb1e0")
+frame_progress = 0.23150906
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("3_06wq3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+scale = Vector2(3.245, 3.245)
+shape = SubResource("RectangleShape2D_0bmx3")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
