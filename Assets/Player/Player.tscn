@@ -27,6 +27,7 @@ script = ExtResource("2_mwgys")
 [node name="QAbility" type="Node2D" parent="."]
 
 [node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.5, 0.5)
 
 [node name="Hurtbox" type="Area2D" parent="."]
 collision_layer = 0

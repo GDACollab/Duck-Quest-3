@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://td0u4ytiyu1i"]
+[gd_scene load_steps=6 format=3 uid="uid://td0u4ytiyu1i"]
 
 [ext_resource type="PackedScene" uid="uid://cptnhr8vasju1" path="res://Assets/Tileset/Level 1 Tiles.tscn" id="1_xtr28"]
 [ext_resource type="PackedScene" uid="uid://cmak24w6qj1jr" path="res://Assets/Goal/Goal.tscn" id="2_suj8q"]
 [ext_resource type="PackedScene" uid="uid://keccfyg5pv3g" path="res://Assets/Player/Player.tscn" id="3_suj8q"]
 [ext_resource type="PackedScene" uid="uid://mir8x7shswlo" path="res://Assets/Enemy/Enemy.tscn" id="4_odgls"]
+[ext_resource type="PackedScene" uid="uid://bubkj5knavns4" path="res://Assets/Sign/sign.tscn" id="5_appet"]
 
 [node name="Level 1" type="Node2D"]
 
@@ -17,3 +18,6 @@ unique_name_in_owner = true
 
 [node name="Enemy" parent="." instance=ExtResource("4_odgls")]
 position = Vector2(552, 325)
+
+[node name="Sign" parent="." instance=ExtResource("5_appet")]
+position = Vector2(2703, 362)

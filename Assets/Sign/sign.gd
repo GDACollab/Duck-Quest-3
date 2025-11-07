@@ -8,7 +8,8 @@ var interacting : bool = false
 
 
 func _ready() -> void:
-	pass
+	choose_and_parse_txt_file()
+	LABEL.hide()
 	
 func _process(_delta: float) -> void:
 	check_interaction()
@@ -32,14 +33,14 @@ func choose_and_parse_txt_file() -> void:
 		if ".import" not in file:
 			var resource := dir.get_current_dir() + "/" + file
 			text_files.append(resource)
-			
+	
 	randomize()
 	text_files.shuffle()
 	var text_path = text_files[0]
-	
 	var file_access = FileAccess.open(text_path, FileAccess.READ)
 	if file_access:
 		LABEL.text = file_access.get_as_text()
+		file_access.close()
 	
 	
 	
