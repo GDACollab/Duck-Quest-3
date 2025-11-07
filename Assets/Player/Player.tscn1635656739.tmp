@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://keccfyg5pv3g"]
+[gd_scene load_steps=5 format=3 uid="uid://keccfyg5pv3g"]
 
 [ext_resource type="Texture2D" uid="uid://bubr0lc8asxgr" path="res://Assets/Player/Sprites/duck.png" id="1_a52ai"]
 [ext_resource type="Script" uid="uid://bqrmh2n3al7ee" path="res://Assets/Player/Scripts/player.gd" id="1_mwgys"]
@@ -7,16 +7,11 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ify7s"]
 size = Vector2(359.5, 504)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mwgys"]
-size = Vector2(1195, 66)
-
 [node name="Player" type="Node2D"]
 
 [node name="Player" type="CharacterBody2D" parent="."]
 position = Vector2(376, 281)
 script = ExtResource("1_mwgys")
-move_speed = 800
-acceleration = 2400
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 scale = Vector2(0.25, 0.25)
@@ -25,9 +20,3 @@ shape = SubResource("RectangleShape2D_ify7s")
 [node name="Duck" type="Sprite2D" parent="Player/CollisionShape2D"]
 texture = ExtResource("1_a52ai")
 script = ExtResource("2_mwgys")
-
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(578, 610)
-shape = SubResource("RectangleShape2D_mwgys")
