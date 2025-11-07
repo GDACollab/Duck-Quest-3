@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://bubkj5knavns4"]
+
+[ext_resource type="Script" uid="uid://d3fohaeu0c5dk" path="res://Assets/Sign/sign.gd" id="1_eon2q"]
+[ext_resource type="Texture2D" uid="uid://bdswy7oj8eyu4" path="res://Assets/Sign/sign.png" id="2_n52ok"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_eon2q"]
+radius = 101.0
+height = 332.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_eon2q"]
+font_size = 30
+
+[node name="Sign" type="Area2D"]
+script = ExtResource("1_eon2q")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -72)
+shape = SubResource("CapsuleShape2D_eon2q")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_n52ok")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -147.0
+offset_top = -312.0
+offset_right = 145.0
+offset_bottom = -122.0
+text = "hello"
+label_settings = SubResource("LabelSettings_eon2q")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
