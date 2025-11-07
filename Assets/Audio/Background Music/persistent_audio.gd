@@ -1,4 +1,11 @@
 extends AudioStreamPlayer
+
+## WARNING: DO NOT MODIFY THIS FILE
+## WARNING: DO NOT MODIFY THIS FILE
+## WARNING: DO NOT MODIFY THIS FILE
+## WARNING: DO NOT MODIFY THIS FILE
+## WARNING: DO NOT MODIFY THIS FILE
+
 var dir := DirAccess.open("res://Assets/Audio/Background Music/")
 
 

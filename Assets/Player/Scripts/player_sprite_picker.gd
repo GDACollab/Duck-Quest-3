@@ -1,5 +1,11 @@
 extends Sprite2D
 
+## WARNING: DO NOT MODIFY THIS FILE
+## WARNING: DO NOT MODIFY THIS FILE
+## WARNING: DO NOT MODIFY THIS FILE
+## WARNING: DO NOT MODIFY THIS FILE
+## WARNING: DO NOT MODIFY THIS FILE
+
 var player_sprites_dir = DirAccess.open("res://Assets/Player/Sprites/")
 
 const file_extension : String = "res://Assets/Player/Sprites/"

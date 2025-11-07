@@ -1,5 +1,11 @@
 extends Area2D
 
+## WARNING: DO NOT MODIFY THIS FILE
+## WARNING: DO NOT MODIFY THIS FILE
+## WARNING: DO NOT MODIFY THIS FILE
+## WARNING: DO NOT MODIFY THIS FILE
+## WARNING: DO NOT MODIFY THIS FILE
+
 var dir := DirAccess.open("res://Assets/Text Files/")
 var interactable : bool = false
 var interacting : bool = false
