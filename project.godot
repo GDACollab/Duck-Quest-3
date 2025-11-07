@@ -14,3 +14,7 @@ config/name="Duck Quest 3"
 run/main_scene="uid://td0u4ytiyu1i"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+AudioSingleton="*res://Assets/Levels/persistent_audio.tscn"

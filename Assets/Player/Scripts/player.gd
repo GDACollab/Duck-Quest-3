@@ -41,10 +41,10 @@ func choose_jump_sound():
 	dir.list_dir_begin()
 	for file: String in dir.get_files():
 		if ".import" not in file:
-			var resource := load(dir.get_current_dir() + "/" + file)
+			var resource := dir.get_current_dir() + "/" + file
 			jump_sounds.append(resource)
 			
 	randomize()
 	jump_sounds.shuffle()
-	AUDIO.stream = jump_sounds[0]
+	AUDIO.stream = load(jump_sounds[0])
 	
