@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
 static var state_name: String = "Move"
-var audio_dir := DirAccess.open("res://Assets/Audio/Player Jump SFX/")
-var sprite_dir := DirAccess.open("res://Assets/Player/Sprites/")
+var dir := DirAccess.open("res://Assets/Audio/Player Jump SFX/")
+
 
 
 @export var rotation_speed: float
@@ -34,13 +34,14 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 
-func choose_jump_sound() -> void:
+
+func choose_jump_sound():
 	var jump_sounds : Array = []
 	
-	audio_dir.list_dir_begin()
-	for file: String in audio_dir.get_files():
+	dir.list_dir_begin()
+	for file: String in dir.get_files():
 		if ".import" not in file:
-			var resource := audio_dir.get_current_dir() + "/" + file
+			var resource := dir.get_current_dir() + "/" + file
 			jump_sounds.append(resource)
 			
 	randomize()
