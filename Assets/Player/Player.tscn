@@ -26,6 +26,8 @@ shape = SubResource("RectangleShape2D_ify7s")
 texture = ExtResource("1_a52ai")
 script = ExtResource("2_mwgys")
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Player"]
+
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
