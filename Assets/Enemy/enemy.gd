@@ -19,7 +19,7 @@ func _ready() -> void:
 	for t: String in files_array:
 		if (!t.contains("import") && !t.contains("uid")):
 			scripts_array.append(t)
-	print(scripts_array)
+	# print(scripts_array)
 	custom_script = load(file_extension + scripts_array.pick_random()).new()
 
 func _process(delta: float) -> void:

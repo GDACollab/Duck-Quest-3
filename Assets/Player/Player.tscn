@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://keccfyg5pv3g"]
+[gd_scene load_steps=6 format=3 uid="uid://keccfyg5pv3g"]
 
 [ext_resource type="Texture2D" uid="uid://bubr0lc8asxgr" path="res://Assets/Player/Sprites/duck.png" id="1_a52ai"]
 [ext_resource type="Script" uid="uid://bqrmh2n3al7ee" path="res://Assets/Player/Scripts/player.gd" id="1_mwgys"]
@@ -6,6 +6,10 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ify7s"]
 size = Vector2(100, 150)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mwgys"]
+radius = 28.0
+height = 110.0
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_mwgys")
@@ -23,3 +27,12 @@ script = ExtResource("2_mwgys")
 [node name="QAbility" type="Node2D" parent="."]
 
 [node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Hurtbox" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+shape = SubResource("CapsuleShape2D_mwgys")
+
+[connection signal="body_entered" from="Hurtbox" to="." method="_on_hurtbox_body_entered"]
