@@ -85,5 +85,5 @@ func _choose_jump_sound():
 	jump_sounds.shuffle()
 	AUDIO.stream = load(jump_sounds[0])
 
-func _on_hurtbox_body_entered(body: Node2D) -> void:
+func _on_hurtbox_body_entered(_body: Node2D) -> void:
 	hide() # Player disappears after being hit.
