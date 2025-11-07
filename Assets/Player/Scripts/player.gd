@@ -1,6 +1,12 @@
 class_name Player
 extends CharacterBody2D
 
+## WARNING: DO NOT MODIFY THIS FILE
+## WARNING: DO NOT MODIFY THIS FILE
+## WARNING: DO NOT MODIFY THIS FILE
+## WARNING: DO NOT MODIFY THIS FILE
+## WARNING: DO NOT MODIFY THIS FILE
+
 static var state_name: String = "Move"
 var jump_dir := DirAccess.open("res://Assets/Audio/Player Jump SFX/")
 var ability_dir := DirAccess.open("res://Assets/Player/Ability Scripts/")

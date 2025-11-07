@@ -1,5 +1,13 @@
 extends Area2D
 
+## WARNING: DO NOT MODIFY THIS FILE
+## WARNING: DO NOT MODIFY THIS FILE
+## WARNING: DO NOT MODIFY THIS FILE
+## WARNING: DO NOT MODIFY THIS FILE
+## WARNING: DO NOT MODIFY THIS FILE
+
+
+
 var levels_dir = DirAccess.open("res://Assets/Levels/")
 
 const file_extension : String = "res://Assets/Levels/"
