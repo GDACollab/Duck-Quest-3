@@ -13,6 +13,7 @@ var ability_dir := DirAccess.open("res://Assets/Player/Ability Scripts/")
 
 @export var move_speed = 800
 @export var acceleration = 3200
+@export var jump_height = 700
 
 
 @onready var AUDIO : AudioStreamPlayer2D = $AudioStreamPlayer2D
@@ -45,7 +46,7 @@ func _physics_process(delta: float) -> void:
 		velocity.y += 980 * delta
 	
 	if(Input.is_action_just_pressed("jump") and is_on_floor()):
-		velocity.y -= 500
+		velocity.y -= jump_height
 		AUDIO.play()
 	move_and_slide()
 

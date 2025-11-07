@@ -13,6 +13,7 @@ func _init() -> void:
 # player.move_speed 
 # player.acceleration
 # player.toggle_gravity
+# player.jump_height
 ## you may do whatever, as long as it all happens within this script.
 ## feel free to declare variables and other functions as well.
 ## only modify your ability script and nothing else
