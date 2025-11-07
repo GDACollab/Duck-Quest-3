@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cvr15ujvne3da"
+path="res://.godot/imported/deepscanmp3-14662.mp3-ab11ac86f5cd20897e8639dcce2cf5e8.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Win SFX/deepscanmp3-14662.mp3"
+dest_files=["res://.godot/imported/deepscanmp3-14662.mp3-ab11ac86f5cd20897e8639dcce2cf5e8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
