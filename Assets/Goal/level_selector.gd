@@ -11,5 +11,5 @@ func _ready() -> void:
 
 func _on_body_entered(body: CharacterBody2D) -> void:
 	if (body.name == "Player"):
-		get_tree().change_scene_to_file(file_extension + files_array.pick_random())
+		get_tree().change_scene_to_file.call_deferred(file_extension + files_array.pick_random())
 		
