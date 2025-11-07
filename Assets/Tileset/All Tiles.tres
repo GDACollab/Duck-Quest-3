@@ -4442,4 +4442,5 @@ texture_region_size = Vector2i(64, 64)
 67:71/0 = 0
 
 [resource]
+tile_size = Vector2i(64, 64)
 sources/0 = SubResource("TileSetAtlasSource_skb06")
