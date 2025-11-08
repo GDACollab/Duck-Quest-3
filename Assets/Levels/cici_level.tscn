@@ -1,0 +1,37 @@
+[gd_scene load_steps=7 format=3 uid="uid://c8gmbbw4e52x5"]
+
+[ext_resource type="PackedScene" uid="uid://buag6j6n88lm3" path="res://Assets/Tileset/Cici Level Tiles.tscn" id="1_jk71h"]
+[ext_resource type="PackedScene" uid="uid://cmak24w6qj1jr" path="res://Assets/Goal/Goal.tscn" id="2_g4uh3"]
+[ext_resource type="PackedScene" uid="uid://keccfyg5pv3g" path="res://Assets/Player/Player.tscn" id="3_q57q2"]
+[ext_resource type="PackedScene" uid="uid://mir8x7shswlo" path="res://Assets/Enemy/Enemy.tscn" id="4_urqmu"]
+[ext_resource type="PackedScene" uid="uid://bubkj5knavns4" path="res://Assets/Sign/sign.tscn" id="5_8uyfr"]
+[ext_resource type="PackedScene" uid="uid://1eepm7q2ixl6" path="res://Assets/Background/background.tscn" id="6_8ppsd"]
+
+[node name="CiciLevel" type="Node2D"]
+
+[node name="CiciLevelTiles" parent="." instance=ExtResource("1_jk71h")]
+
+[node name="Goal" parent="." instance=ExtResource("2_g4uh3")]
+position = Vector2(4806, 37)
+
+[node name="Player" parent="." instance=ExtResource("3_q57q2")]
+unique_name_in_owner = true
+position = Vector2(-170, -122)
+
+[node name="Sign" parent="." instance=ExtResource("5_8uyfr")]
+z_index = -1
+position = Vector2(1005, -67)
+
+[node name="Background" parent="." instance=ExtResource("6_8ppsd")]
+
+[node name="Enemy" parent="." instance=ExtResource("4_urqmu")]
+position = Vector2(-1909, 783)
+
+[node name="Enemy2" parent="." instance=ExtResource("4_urqmu")]
+position = Vector2(-3976, 1303)
+
+[node name="Enemy3" parent="." instance=ExtResource("4_urqmu")]
+position = Vector2(2136, 1142)
+
+[node name="Enemy4" parent="." instance=ExtResource("4_urqmu")]
+position = Vector2(3535, -557)
