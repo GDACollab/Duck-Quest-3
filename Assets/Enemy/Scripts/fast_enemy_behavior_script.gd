@@ -1,5 +1,6 @@
+# EXAMPLE
 # YOUR CLASS SHOULD EXTEND ENEMYSCRIPT!
-class_name FastEnemyScript extends EnemyScript
+class_name FastEnemyBehaviorScript extends EnemyBehaviorScript
 
 func get_speed() -> float:
 	return 100
