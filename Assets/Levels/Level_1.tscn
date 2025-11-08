@@ -18,6 +18,9 @@ position = Vector2(3480, 418)
 
 [node name="Player" parent="." instance=ExtResource("3_suj8q")]
 unique_name_in_owner = true
+move_speed = 999
+acceleration = 999
+jump_height = 999
 
 [node name="Enemy" parent="." instance=ExtResource("4_odgls")]
 position = Vector2(552, 325)
