@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://td0u4ytiyu1i"]
+[gd_scene load_steps=9 format=3 uid="uid://td0u4ytiyu1i"]
 
 [ext_resource type="PackedScene" uid="uid://cptnhr8vasju1" path="res://Assets/Tileset/Level 1 Tiles.tscn" id="1_xtr28"]
 [ext_resource type="PackedScene" uid="uid://cmak24w6qj1jr" path="res://Assets/Goal/Goal.tscn" id="2_suj8q"]
@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://mir8x7shswlo" path="res://Assets/Enemy/Enemy.tscn" id="4_odgls"]
 [ext_resource type="PackedScene" uid="uid://bubkj5knavns4" path="res://Assets/Sign/sign.tscn" id="5_appet"]
 [ext_resource type="PackedScene" uid="uid://1eepm7q2ixl6" path="res://Assets/Background/background.tscn" id="6_vlk2n"]
+[ext_resource type="Texture2D" uid="uid://cmxontrrtw865" path="res://Assets/Background/Background Assets/sky.png" id="7_n5caj"]
+[ext_resource type="Texture2D" uid="uid://bpct6mpupv7ug" path="res://Assets/Background/Background Assets/I-do-not-control-the-speed-at-which-lobsters-Die.jpg" id="8_0pawr"]
 
 [node name="Level 1" type="Node2D"]
 
@@ -24,3 +26,14 @@ position = Vector2(552, 325)
 position = Vector2(2703, 362)
 
 [node name="Background" parent="." instance=ExtResource("6_vlk2n")]
+
+[node name="Sky" type="Sprite2D" parent="."]
+z_index = -99
+position = Vector2(1569.0002, 63.00003)
+scale = Vector2(14.960453, 7.765685)
+texture = ExtResource("7_n5caj")
+
+[node name="IDoNotControlTheSpeedAtWhichLobstersDie" type="Sprite2D" parent="."]
+position = Vector2(3994.25, 297.625)
+scale = Vector2(2.1476965, 1.4596775)
+texture = ExtResource("8_0pawr")
