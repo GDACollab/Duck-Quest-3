@@ -22,7 +22,7 @@ func _ready() -> void:
 	files_array = levels_dir.get_files()
 	choose_win_sound()
 
-func _on_body_entered(body: CharacterBody2D) -> void:
+func _on_body_entered(body: Node2D) -> void:
 	if (body.name == "Player") and not level_complete:
 		AUDIO.play()
 		level_complete = true
