@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 AudioSingleton="*res://Assets/Audio/persistent_audio.tscn"
 
+[display]
+
+window/stretch/mode="viewport"
+
 [input]
 
 left={
