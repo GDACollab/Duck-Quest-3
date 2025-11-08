@@ -3,7 +3,7 @@
 class_name FastEnemyBehaviorScript extends EnemyBehaviorScript
 
 func get_speed() -> float:
-	return 100
+	return 50
 
 ## A MOVE FUNCTION THAT TAKES THESE PARAMETERS IS REQUIRED FOR THE ENEMY TO FUNCTION
 func move(current_position: Vector2, player_position: Vector2, delta_time: float) -> Vector2:
