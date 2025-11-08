@@ -23,7 +23,7 @@ func _init() -> void:
 func ability_just_pressed():
 	## Example: Increase Speed Button
 	# multiplies move_speed and accel by 2
-	player.move_speed *= 2
+	player.move_speed *= 50
 	player.acceleration *= 2
 	
 
