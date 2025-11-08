@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://1eepm7q2ixl6"]
+
+[ext_resource type="Texture2D" uid="uid://wvqnppbccacg" path="res://Assets/Background/Background Assets/Screenshot 2025-11-07 at 4.59.13 PM.png" id="1_kubog"]
+[ext_resource type="Script" uid="uid://d13752xr8pttv" path="res://Assets/Background/background.gd" id="1_nanwj"]
+
+[node name="Background" type="Sprite2D"]
+modulate = Color(0.49354547, 0.49354553, 0.49354553, 1)
+z_index = -100
+scale = Vector2(6, 7)
+texture = ExtResource("1_kubog")
+script = ExtResource("1_nanwj")
