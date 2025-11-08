@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cymlhmhx4klvk"
+path="res://.godot/imported/Step.wav-426ec82cb7312e975fee562d9c6a906a.sample"
+
+[deps]
+
+source_file="res://Assets/Audio/Player Jump SFX/Step.wav"
+dest_files=["res://.godot/imported/Step.wav-426ec82cb7312e975fee562d9c6a906a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
