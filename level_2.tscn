@@ -1,0 +1,26 @@
+[gd_scene load_steps=7 format=3 uid="uid://bhlshfq8tmmg0"]
+
+[ext_resource type="PackedScene" uid="uid://cptnhr8vasju1" path="res://Assets/Tileset/Level 1 Tiles.tscn" id="1_0s5r2"]
+[ext_resource type="PackedScene" uid="uid://cmak24w6qj1jr" path="res://Assets/Goal/Goal.tscn" id="2_7j8ne"]
+[ext_resource type="PackedScene" uid="uid://keccfyg5pv3g" path="res://Assets/Player/Player.tscn" id="3_7dov7"]
+[ext_resource type="PackedScene" uid="uid://mir8x7shswlo" path="res://Assets/Enemy/Enemy.tscn" id="4_ehv2h"]
+[ext_resource type="PackedScene" uid="uid://bubkj5knavns4" path="res://Assets/Sign/sign.tscn" id="5_15wb7"]
+[ext_resource type="PackedScene" uid="uid://1eepm7q2ixl6" path="res://Assets/Background/background.tscn" id="6_eoq84"]
+
+[node name="Level 2" type="Node2D"]
+
+[node name="Level 1 Tiles" parent="." instance=ExtResource("1_0s5r2")]
+
+[node name="Goal" parent="." instance=ExtResource("2_7j8ne")]
+position = Vector2(3480, 418)
+
+[node name="Player" parent="." instance=ExtResource("3_7dov7")]
+unique_name_in_owner = true
+
+[node name="Enemy" parent="." instance=ExtResource("4_ehv2h")]
+position = Vector2(552, 325)
+
+[node name="Sign" parent="." instance=ExtResource("5_15wb7")]
+position = Vector2(2703, 362)
+
+[node name="Background" parent="." instance=ExtResource("6_eoq84")]
