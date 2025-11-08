@@ -93,3 +93,4 @@ func _choose_jump_sound():
 
 func _on_hurtbox_body_entered(_body: Node2D) -> void:
 	hide() # Player disappears after being hit.
+	get_tree().call_deferred("reload_current_scene")
