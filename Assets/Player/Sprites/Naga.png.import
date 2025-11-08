@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bubr0lc8asxgr"
-path="res://.godot/imported/duck.png-21cab1e54e4b83711f5fa91164c83dfd.ctex"
+uid="uid://bqc3brl66lyrf"
+path="res://.godot/imported/Naga.png-2d33a4d8b6ac18624e8242e9f3fd4e93.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Player/Sprites/duck.png"
-dest_files=["res://.godot/imported/duck.png-21cab1e54e4b83711f5fa91164c83dfd.ctex"]
+source_file="res://Assets/Player/Sprites/Naga.png"
+dest_files=["res://.godot/imported/Naga.png-2d33a4d8b6ac18624e8242e9f3fd4e93.ctex"]
 
 [params]
 
