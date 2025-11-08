@@ -1,0 +1,38 @@
+[gd_scene load_steps=7 format=4 uid="uid://cex8rl7fvykwq"]
+
+[ext_resource type="TileSet" uid="uid://pv3oj3oo7g5q" path="res://Assets/Tileset/All Tiles.tres" id="1_udeu0"]
+[ext_resource type="PackedScene" uid="uid://cmak24w6qj1jr" path="res://Assets/Goal/Goal.tscn" id="2_8cpko"]
+[ext_resource type="PackedScene" uid="uid://keccfyg5pv3g" path="res://Assets/Player/Player.tscn" id="3_guknl"]
+[ext_resource type="PackedScene" uid="uid://mir8x7shswlo" path="res://Assets/Enemy/Enemy.tscn" id="4_jeuj4"]
+[ext_resource type="PackedScene" uid="uid://bubkj5knavns4" path="res://Assets/Sign/sign.tscn" id="5_kyjxk"]
+[ext_resource type="PackedScene" uid="uid://1eepm7q2ixl6" path="res://Assets/Background/background.tscn" id="6_q006t"]
+
+[node name="level_67" type="Node2D"]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAABAAIAAAAFAA4AAAACAAIAAAAFAA4AAAADAAIAAAAFAA4AAAAEAAIAAAAFAA4AAAAFAAIAAAAFAA4AAAAGAAIAAAAFAA4AAAAHAAIAAAAFAA4AAAAIAAIAAAAFAA4AAAAJAAIAAAAFAA4AAAAKAAIAAAAFAA4AAAALAAIAAAAFAA4AAAAMAAIAAAAFAA4AAAANAAIAAAAFAA4AAAABAAEAAAAKAAgAAAACAAEAAAAKAAgAAAADAAEAAAAKAAgAAAAEAAEAAAAKAAgAAAAFAAEAAAAKAAgAAAAGAAEAAAAKAAgAAAAHAAEAAAAKAAgAAAAIAAEAAAAKAAgAAAAJAAEAAAAKAAgAAAAKAAEAAAAKAAgAAAALAAEAAAAKAAgAAAAMAAEAAAAKAAgAAAANAAEAAAAKAAgAAAAKAP//AAANAAcAAAALAP//AAANAAYAAAA=")
+tile_set = ExtResource("1_udeu0")
+
+[node name="Goal" parent="." instance=ExtResource("2_8cpko")]
+position = Vector2(3480, 418)
+
+[node name="Player" parent="." instance=ExtResource("3_guknl")]
+unique_name_in_owner = true
+position = Vector2(475, -70)
+
+[node name="Enemy" parent="." instance=ExtResource("4_jeuj4")]
+position = Vector2(208, -78)
+
+[node name="Enemy2" parent="." instance=ExtResource("4_jeuj4")]
+position = Vector2(731, -113)
+
+[node name="Enemy3" parent="." instance=ExtResource("4_jeuj4")]
+position = Vector2(358, -124)
+
+[node name="Enemy4" parent="." instance=ExtResource("4_jeuj4")]
+position = Vector2(614, 29)
+
+[node name="Sign" parent="." instance=ExtResource("5_kyjxk")]
+position = Vector2(2703, 362)
+
+[node name="Background" parent="." instance=ExtResource("6_q006t")]
