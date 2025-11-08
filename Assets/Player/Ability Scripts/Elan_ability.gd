@@ -21,19 +21,12 @@ func _init() -> void:
 
 ## called whenever the player just pressed Q. It is called once.
 func ability_just_pressed():
-	#makes the player move really fast and float
-	player.move_speed *= 10
-	player.acceleration *= 50
-	player.jump_height *= 5
-	player.toggle_gravity(false)
+	#makes the player jump mid-air
+	player.velocity.y -= 700
 	#Lets the dev know that this script is running b/c it has a 50/50 chance to run
 	print("The right ability is being run")
 	
 
 ## called whenever the player just let go of Q. It is called once.
 func ability_just_released():
-	#resets the players speed and acceleration and makes gravity exist again
-	player.move_speed /= 10
-	player.acceleration /= 50
-	player.jump_height /= 5
-	player.toggle_gravity(true)
+	pass
