@@ -16,10 +16,10 @@ position = Vector2(3480, 418)
 unique_name_in_owner = true
 
 [node name="Enemy" parent="." instance=ExtResource("4_nfsjy")]
-position = Vector2(552, 325)
+position = Vector2(1644, 337)
 
 [node name="Sign" parent="." instance=ExtResource("5_wl0ew")]
-position = Vector2(2703, 362)
+position = Vector2(1231, 160)
 
 [node name="Background" parent="." instance=ExtResource("6_snwsg")]
 
