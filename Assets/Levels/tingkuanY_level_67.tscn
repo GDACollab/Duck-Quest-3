@@ -14,7 +14,7 @@ tile_map_data = PackedByteArray("AAABAAIAAAAFAA4AAAACAAIAAAAFAA4AAAADAAIAAAAFAA4
 tile_set = ExtResource("1_udeu0")
 
 [node name="Goal" parent="." instance=ExtResource("2_8cpko")]
-position = Vector2(3480, 418)
+position = Vector2(198, -71)
 
 [node name="Player" parent="." instance=ExtResource("3_guknl")]
 unique_name_in_owner = true
