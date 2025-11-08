@@ -24,3 +24,4 @@ position = Vector2(552, 325)
 position = Vector2(2703, 362)
 
 [node name="Background" parent="." instance=ExtResource("6_vlk2n")]
+
