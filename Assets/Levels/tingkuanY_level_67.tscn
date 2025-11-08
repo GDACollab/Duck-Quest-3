@@ -21,13 +21,13 @@ unique_name_in_owner = true
 position = Vector2(475, -70)
 
 [node name="Enemy" parent="." instance=ExtResource("4_jeuj4")]
-position = Vector2(68, -66)
+position = Vector2(37, 355)
 
 [node name="Enemy2" parent="." instance=ExtResource("4_jeuj4")]
 position = Vector2(990, -308)
 
 [node name="Enemy3" parent="." instance=ExtResource("4_jeuj4")]
-position = Vector2(132, -290)
+position = Vector2(9, -635)
 
 [node name="Enemy4" parent="." instance=ExtResource("4_jeuj4")]
 position = Vector2(832, -4)
