@@ -23,13 +23,21 @@ func _init() -> void:
 func ability_just_pressed():
 	## Example: Increase Speed Button
 	# multiplies move_speed and accel by 2
+	var dodge = player.get_node("Hurtbox").get_node("CollisionShape2D")
+	if dodge:
+		print("DODGE FOUND")
+		dodge.disabled = true;
 	for n in (360.0 / 12.0):
 		await get_tree().create_timer(0.001).timeout
 		player.rotation_degrees += 12;
+	
 
 
 ## called whenever the player just let go of Q. It is called once.
 func ability_just_released():
 	## Example: Increase Speed Button
 	# divides move_speed and accel by 2, returning it to the original value.
+	var dodge = player.get_node("Hurtbox").get_node("CollisionShape2D")
+	if dodge:
+		dodge.disabled = false
 	pass	

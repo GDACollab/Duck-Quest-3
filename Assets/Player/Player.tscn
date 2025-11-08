@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://keccfyg5pv3g"]
 
-[ext_resource type="Texture2D" uid="uid://bubr0lc8asxgr" path="res://Assets/Player/Sprites/duck.png" id="1_a52ai"]
 [ext_resource type="Script" uid="uid://bqrmh2n3al7ee" path="res://Assets/Player/Scripts/player.gd" id="1_mwgys"]
+[ext_resource type="Texture2D" uid="uid://dmlajytl2jej2" path="res://Assets/Player/Sprites/chickennugget.png" id="2_ftc6t"]
 [ext_resource type="Script" uid="uid://dvymr3vpb3r4q" path="res://Assets/Player/Scripts/player_sprite_picker.gd" id="2_mwgys"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ify7s"]
@@ -19,7 +19,7 @@ shape = SubResource("RectangleShape2D_ify7s")
 
 [node name="Duck" type="Sprite2D" parent="."]
 scale = Vector2(0.25, 0.25)
-texture = ExtResource("1_a52ai")
+texture = ExtResource("2_ftc6t")
 script = ExtResource("2_mwgys")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
