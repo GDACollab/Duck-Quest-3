@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c0s6i553qq3jy"
+path="res://.godot/imported/SFX_JumpCartoonish.wav-54c051267bf1f3bef369619634e0b5bf.sample"
+
+[deps]
+
+source_file="res://Assets/Audio/Player Jump SFX/SFX_JumpCartoonish.wav"
+dest_files=["res://.godot/imported/SFX_JumpCartoonish.wav-54c051267bf1f3bef369619634e0b5bf.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

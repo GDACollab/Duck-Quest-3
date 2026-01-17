@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://keccfyg5pv3g"]
 
-[ext_resource type="Texture2D" uid="uid://bubr0lc8asxgr" path="res://Assets/Player/Sprites/duck.png" id="1_a52ai"]
 [ext_resource type="Script" uid="uid://bqrmh2n3al7ee" path="res://Assets/Player/Scripts/player.gd" id="1_mwgys"]
+[ext_resource type="Texture2D" uid="uid://b7wj250ltgqy" path="res://Assets/Player/Sprites/PlayerSprite_DUCK.png" id="2_ftc6t"]
 [ext_resource type="Script" uid="uid://dvymr3vpb3r4q" path="res://Assets/Player/Scripts/player_sprite_picker.gd" id="2_mwgys"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ify7s"]
@@ -19,7 +19,7 @@ shape = SubResource("RectangleShape2D_ify7s")
 
 [node name="Duck" type="Sprite2D" parent="."]
 scale = Vector2(0.25, 0.25)
-texture = ExtResource("1_a52ai")
+texture = ExtResource("2_ftc6t")
 script = ExtResource("2_mwgys")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
@@ -34,6 +34,11 @@ collision_layer = 0
 collision_mask = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+position = Vector2(-2, -3)
 shape = SubResource("CapsuleShape2D_mwgys")
+
+[node name="PlayerSpriteDuck" type="Sprite2D" parent="."]
+position = Vector2(204, 4)
+scale = Vector2(0.50757575, 0.462)
 
 [connection signal="body_entered" from="Hurtbox" to="." method="_on_hurtbox_body_entered"]

@@ -1,0 +1,27 @@
+[gd_scene load_steps=7 format=3 uid="uid://o24p0odmto2d"]
+
+[ext_resource type="PackedScene" uid="uid://cmak24w6qj1jr" path="res://Assets/Goal/Goal.tscn" id="2_222aj"]
+[ext_resource type="PackedScene" uid="uid://keccfyg5pv3g" path="res://Assets/Player/Player.tscn" id="3_036hy"]
+[ext_resource type="PackedScene" uid="uid://mir8x7shswlo" path="res://Assets/Enemy/Enemy.tscn" id="4_nfsjy"]
+[ext_resource type="PackedScene" uid="uid://bubkj5knavns4" path="res://Assets/Sign/sign.tscn" id="5_wl0ew"]
+[ext_resource type="PackedScene" uid="uid://ck2qirn7afqs6" path="res://Assets/Tileset/HAPPY HAPPY HAPPY Tiles.tscn" id="6_02310"]
+[ext_resource type="PackedScene" uid="uid://1eepm7q2ixl6" path="res://Assets/Background/background.tscn" id="6_snwsg"]
+
+[node name="Level 1" type="Node2D"]
+
+[node name="Goal" parent="." instance=ExtResource("2_222aj")]
+position = Vector2(3480, 418)
+
+[node name="Player" parent="." instance=ExtResource("3_036hy")]
+unique_name_in_owner = true
+
+[node name="Enemy" parent="." instance=ExtResource("4_nfsjy")]
+position = Vector2(1644, 337)
+
+[node name="Sign" parent="." instance=ExtResource("5_wl0ew")]
+position = Vector2(1231, 160)
+
+[node name="Background" parent="." instance=ExtResource("6_snwsg")]
+
+[node name="HAPPY HAPPY HAPPY Tiles" parent="." instance=ExtResource("6_02310")]
+position = Vector2(-144, 235)
